@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="StyleSheet.css">
   <title>City Views</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,17 +40,91 @@
     <p>The row with cities break first because col-md is intended for a medium screen with >=992px, such as small laptops, 
       so it breaks first. col-sm-2 used for small screens with >=768px, such as tablets.</p>
 
-
-      <div class="Image_Container">
+      <!--Part 4 Add images -->
+      <div class="responsive_Container">
         <img src="Charminar.jpg" class="img-fluid" alt="City1" height="400" width="400">
         <img src="Bengaluru.jpg" class="img-fluid" alt = "City2" height="400" width="400">
         <img src="Lucknow.jpg" class="img-fluid" alt="City3" height="400" width="400">
       </div>
-      <div class="Thumbnails_Container">
+      <div class="thumbnails_Container">
         <img src="Charminar.jpg" class="img-thumbnail" alt="City1" height="400" width="400">
         <img src="Bengaluru.jpg" class="img-thumbnail" alt="City2" height="400" width="400">
         <img src="Lucknow.jpg" class="img-thumbnail" alt="City3" height="400" width="400">
+      </div><br>
+      
+      <!--Part 5 Create and Style a table-->
+      <caption>Names of Cities, Rivers, and Trees starts with Letters of my Last Name</caption>
+      <table class="table table-success table-striped table-hover">
+        
+        <thead>
+          <tr>
+            <th scope="col">Letter</th>
+            <th scope="col">City</th>
+            <th scope="col">River</th>
+            <th scope="col">Tree</th>
+          </tr>
+        </thead>
+          <tr>
+            <th scope ="row">B</th>
+            <td>Bengaluru</td>
+            <td>Brahmaputra</td>
+            <td>bamboo</td>
+          </tr>
+          <tr>
+            <th scope = "row">A</th>
+            <td>Allahabad</td>
+            <td>Amla</td>
+            <td>Ahar</td>
+          </tr>
+          <tr>
+            <th scope="row">T</th>
+            <td>Thane</td>
+            <td>Tungabhadra</td>
+            <td>Tamarind</td>
+          </tr>
+          <tr>
+            <th scope="row">H</th>
+            <td>Hyderabad</td>
+            <td>Hiran</td>
+            <td>Hemlock Tree</td>
+          </tr>
+          <tr>
+            <th scope="row">U</th>
+            <td>Udaipur</td>
+            <td>Ulhas</td>
+            <td>Umberlla</td>
+          </tr>
+          <tr>
+            <th scope="row">L</th>
+            <td>Lucknow</td>
+            <td>Lakshmana Tirtha</td>
+            <td>Lotus</td>
+          </tr>
+      </table>
+
+      <!--Part 6 Buttons and Button Groups-->
+
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand">Navigation Bar</span>
+      </nav>
+
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+        <div class="btn-group" role="group" aria-label="Group1">
+          <button type="button" class="btn btn-success">B</button>
+          <button type="button" class="btn btn-success">H</button>
+          <button type="button" class="btn btn-success">L</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Group2">
+          <button type="button" class="btn btn-warning">A</button>
+          <button type="button" class="btn btn-warning">T</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Group23">
+          <button type="button" class="btn btn-danger">A</button>
+        </div>
       </div>
+
+
+
 
 </body>
 </html>
